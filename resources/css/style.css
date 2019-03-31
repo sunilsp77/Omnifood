@@ -20,9 +20,11 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
-.clearfix {zoom: 1;}
+.clearfix {
+  zoom: 1;
+}
 .clearfix:after {
-  content: ".";
+  content: '.';
   clear: both;
   display: block;
   height: 0;
@@ -43,7 +45,7 @@ section {
 }
 
 .box {
-    padding: 1%;
+  padding: 1%;
 }
 /* ***********   HEADINGS   ************************************* */
 h1,
@@ -63,47 +65,46 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 h2::after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 20px;
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: ' ';
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /* ***********   PARAGRAPHS   ************************************* */
 .long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .box p {
-    font-size: 90%;
-    line-height: 145%;
+  font-size: 90%;
+  line-height: 145%;
 }
-
 
 /* ***********   ICONS   ************************************* */
 .icon-big {
-    font-size: 350%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 10px;
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
 }
 
 .icon-small {
@@ -119,7 +120,6 @@ h2::after {
   vertical-align: middle;
   margin-top: -4px;
 }
-
 
 /* ***********   LINKS   ************************************* */
 
@@ -234,7 +234,7 @@ header {
 /* ************************************************************** */
 
 .section-features .long-copy {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* ************************************************************** */
@@ -242,36 +242,36 @@ header {
 /* ************************************************************** */
 
 .section-meals {
-    padding: 0;
+  padding: 0;
 }
 .meals-showcase {
-    list-style: none;
-    width: 100%;
+  list-style: none;
+  width: 100%;
 }
 
 .meals-showcase li {
-    display: block;
-    float: left;
-    width: 25%;
+  display: block;
+  float: left;
+  width: 25%;
 }
 
 .meal-photo {
-    width: 100%;
-    margin: 0 ;
-    overflow: hidden;
-    background-color: #000;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
 }
 .meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
-    opacity: 1;
-    transform: scale(1.03);
+  opacity: 1;
+  transform: scale(1.03);
 }
 
 /* ************************************************************** */
@@ -299,7 +299,7 @@ header {
 .works-step:last-of-type {
   margin-bottom: 80px;
 }
-.works-step div{
+.works-step div {
   color: #e67e22;
   border: 2px solid #e67e22;
   display: inline-block;
@@ -343,7 +343,7 @@ header {
 
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-  url(img/back-customers.jpg);
+    url(img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -356,7 +356,7 @@ blockquote {
 }
 
 blockquote::before {
-  content: "\201C";
+  content: '\201C';
   font-size: 400%;
   display: block;
 }
@@ -371,4 +371,58 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* ************************************************************** */
+/* SIGN UP  */
+/* ************************************************************** */
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%; /*half of the remaining width i.e 10% */
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%; /* 30% of 300%*/
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
 }
